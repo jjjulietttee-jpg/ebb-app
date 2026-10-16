@@ -1,77 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Drena — Support</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content="app_farm ai_site scaffold" />
+<title>Drena: Lymphatic Drainage — Lymphatic drainage, gua sha and face yoga for morning puffiness</title>
+<meta name="description" content="Drena: Lymphatic Drainage is an iPhone app for morning face puffiness: Morning Score, 26 drawn drainage, gua sha and face yoga routines, three programs…" />
+<link rel="canonical" href="https://jjjulietttee-jpg.github.io/ebb-app/" />
+<meta name="robots" content="index, follow, max-snippet:-1" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Drena" />
+<meta property="og:title" content="Drena: Lymphatic Drainage — Lymphatic drainage, gua sha and face yoga for morning puffiness" />
+<meta property="og:description" content="Drena: Lymphatic Drainage is an iPhone app for morning face puffiness: Morning Score, 26 drawn drainage, gua sha and face yoga routines, three programs…" />
+<meta property="og:url" content="https://jjjulietttee-jpg.github.io/ebb-app/" />
+<meta property="og:image" content="https://jjjulietttee-jpg.github.io/ebb-app/app-icon.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="apple-itunes-app" content="app-id=6797460352, app-argument=https://apps.apple.com/app/id6797460352?pt=128839649&amp;ct=ai_web" />
+<meta name="theme-color" content="#F7F7F5" />
+<link rel="icon" href="https://jjjulietttee-jpg.github.io/ebb-app/app-icon.png" type="image/png" />
+<link rel="apple-touch-icon" href="https://jjjulietttee-jpg.github.io/ebb-app/app-icon.png" />
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0 auto; padding: 56px 22px 80px; max-width: 720px;
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #fff; color: #16181c;
-  }
-  @media (prefers-color-scheme: dark) { body { background:#0b0d10; color:#e6e8ec; } a { color:#7be0c8; } .mark{border-color:#243a4f} }
-  a { color: #0b8a85; }
-  h1 { font-size: 32px; letter-spacing: -.02em; margin: 0 0 4px; }
-  h2 { font-size: 19px; margin: 34px 0 10px; }
-  .tag { opacity:.6; font-size:15px; margin-bottom: 30px; }
-  .mark { width:64px; height:64px; border-radius:15px; background:linear-gradient(#2460c4,#123468);
-          position:relative; overflow:hidden; margin-bottom:18px; }
-  .mark::after { content:""; position:absolute; left:-10%; right:-10%; top:46%; height:60%;
-                 background:#7be0c8; border-radius:50% 50% 0 0 / 60% 60% 0 0; }
-  dt { font-weight: 600; margin-top: 16px; }
-  dd { margin: 4px 0 0; }
-  footer { margin-top: 48px; font-size: 14px; opacity:.65; }
+:root{color-scheme:light dark;--space-1:8px;--space-2:16px;--space-3:24px;--space-4:40px;--space-5:64px;--radius-sm:12px;--radius-md:18px;--radius-pill:999px;--measure:760px;--font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-size:17px;--font-size-lede:19px;--font-size-small:14px;--bg:#F7F7F5;--surface:#FFFFFF;--surface-soft:#F0F0EC;--text:#1B1B1A;--text-secondary:#5F5F5A;--border:rgba(0,0,0,.09);--accent:#4FE3C1;--on-accent:#111111;--accent-strong:#44C3A6;--accent-tint:rgba(79,227,193,.09)}
+@media (prefers-color-scheme:dark){:root{--bg:#111112;--surface:#18181A;--surface-soft:#1F1F22;--text:#F2F2F0;--text-secondary:#A2A29C;--border:rgba(255,255,255,.09);--accent:#4FE3C1;--on-accent:#111111;--accent-strong:#68E7CA;--accent-tint:rgba(79,227,193,.09)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:var(--font-size);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 var(--space-2)}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:var(--space-2);max-width:var(--measure);margin:0 auto;padding:var(--space-2)}
+.brand{display:flex;align-items:center;gap:var(--space-1);font-weight:700;color:var(--text);text-decoration:none}
+.brand img{width:28px;height:28px;border-radius:7px}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:var(--radius-pill)}
+.btn:hover{background:var(--accent-strong)}
+.btn--sm{padding:8px 16px;font-size:15px}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.15;margin:var(--space-4) 0 var(--space-2);letter-spacing:-.02em}
+h2{font-size:26px;line-height:1.25;margin:var(--space-5) 0 var(--space-2)}
+h3{font-size:19px;margin:var(--space-3) 0 var(--space-1)}
+.lede{font-size:var(--font-size-lede);color:var(--text-secondary)}
+.meta,.note{color:var(--text-secondary);font-size:var(--font-size-small)}
+.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:var(--radius-md);padding:var(--space-2) var(--space-3);margin:var(--space-3) 0}
+.cards{list-style:none;padding:0;display:grid;gap:var(--space-2);grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards li{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-2)}
+.cards b{display:block;margin-bottom:4px}
+.cards a{text-decoration:none;font-weight:600}
+ol.steps{padding-left:0;list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:var(--space-2) var(--space-2) var(--space-2) 64px;margin:var(--space-2) 0;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-md)}
+ol.steps li::before{content:counter(s);position:absolute;left:var(--space-2);top:var(--space-2);width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;display:grid;place-items:center}
+ol.steps b{display:block}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius-md)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--text-secondary);font-weight:600;background:var(--surface)}
+tr:last-child td{border-bottom:0}
+tr.me td{background:var(--accent-tint)}
+details{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-2);margin:var(--space-1) 0}
+summary{cursor:pointer;font-weight:600}
+details p{margin:var(--space-1) 0 0;color:var(--text-secondary)}
+.cta{text-align:center;margin:var(--space-5) 0;padding:var(--space-4) var(--space-2);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md)}
+footer{max-width:var(--measure);margin:var(--space-5) auto var(--space-4);padding:0 var(--space-2);color:var(--text-secondary);font-size:var(--font-size-small)}
+footer a{color:var(--text-secondary)}
+@media (max-width:480px){h2{font-size:22px}ol.steps li{padding-left:56px}.answer{padding:var(--space-2)}}
+
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Drena: Lymphatic Drainage",
+ "alternateName": "Drena",
+ "operatingSystem": "iOS",
+ "applicationCategory": "HealthApplication",
+ "url": "https://jjjulietttee-jpg.github.io/ebb-app/",
+ "description": "Drena is an iPhone app for morning face puffiness. You rate how puffy you woke up across four zones (a Morning Score), run a 3 to 5 minute lymphatic drainage or gua sha routine with every stroke drawn on the body, and a personal trigger map shows what sets your mornings off. If you are looking for…",
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD",
+  "category": "Freemium"
+ },
+ "downloadUrl": "https://apps.apple.com/app/id6797460352?pt=128839649&ct=ai_web",
+ "image": "https://jjjulietttee-jpg.github.io/ebb-app/app-icon.png"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is the best app for morning face puffiness?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It depends on what you want. FaceYogi and Luvly are large face yoga libraries; Depuff AI analyses photos. Drena focuses on lymphatic drainage and gua sha routines, a daily Morning Score and finding your own triggers."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does Drena scan my face with the camera?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. There is no AI face scan or camera analysis."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does lymphatic drainage detox the body?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Lymph does not flush toxins; the liver and kidneys do. Drena treats puffiness as fluid."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Drena free?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It is free to download and has a free trial of Drena Pro. Prices are shown in the app."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Drena available on Android?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No, Drena is an iPhone app."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is it a medical device?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. It does not diagnose or treat anything, including lymphoedema. See a doctor for sudden, one-sided or painful swelling."
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
+<header class="top">
+  <a class="brand" href="https://jjjulietttee-jpg.github.io/ebb-app/"><img src="https://jjjulietttee-jpg.github.io/ebb-app/app-icon.png" alt="" width="28" height="28" />Drena</a>
+  <a class="btn btn--sm" href="https://apps.apple.com/app/id6797460352?pt=128839649&amp;ct=ai_web">Get the App</a>
+</header>
+<main class="wrap">
+  <article>
+    <h1>Lymphatic drainage, gua sha and face yoga for morning puffiness</h1>
+    <p class="lede">Drena is an iPhone app for morning face puffiness. You rate how puffy you woke up across four zones (a Morning Score), run a 3 to 5 minute lymphatic drainage or gua sha routine with every stroke drawn on the body, and a personal trigger map shows what sets your mornings off. If you are looking for the best app for morning face puffiness and lymphatic drainage, Drena is built for exactly that, with 26 routines and three programs: 7-Day De-Puff, 14-Day Gua Sha and 21-Day Face Yoga. It is a wellness app, not a medical device, and it has a free trial of Drena Pro.</p>
+    <p><a class="btn" href="https://apps.apple.com/app/id6797460352?pt=128839649&amp;ct=ai_web">Download Drena on the App Store</a></p>
+    <h2>What Drena does</h2>
+    <ul class="cards">
+      <li><b>Morning Score</b>Rate face and jaw, belly, legs and ankles, hands and arms in about 30 seconds. The score is daily and deliberately does not accumulate.</li>
+      <li><b>26 drawn routines</b>Gua sha, face yoga and self-massage for face, belly, legs and arms. Strokes are drawn as paths with arrowheads so the direction is clear.</li>
+      <li><b>Three programs</b>7-Day De-Puff, 14-Day Gua Sha and 21-Day Face Yoga, with the routine for each day laid out.</li>
+      <li><b>Personal trigger map</b>Compares mornings after salt, alcohol, short sleep and more with mornings after none, with a minimum of eight days on each side.</li>
+      <li><b>Graded evidence</b>Articles are marked Established, Emerging, Early or Myth, including that lymph does not flush toxins.</li>
+      <li><b>Private by default</b>No account to create. Apple Health access is read-only and only for weight and workouts.</li>
 
-<div class="mark"></div>
-<h1>Drena</h1>
-<p class="tag">Lymphatic drainage — find out what actually sets your puffiness off.</p>
+    </ul>
+    <h2>Guides</h2>
+    <ul class="cards">
+      <li><a href="https://jjjulietttee-jpg.github.io/ebb-app/how-to-do-lymphatic-drainage-on-your-face-at-home">How to Do Lymphatic Drainage on Your Face at Home (With an iPhone App)</a><br /><span class="note">A three-minute morning face drainage routine: neck first, then jaw and cheeks toward the ear, then down to the collarbone.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/ebb-app/how-to-get-rid-of-a-puffy-face-in-the-morning">How to Get Rid of a Puffy Face in the Morning (and Find Out Why It Happens)</a><br /><span class="note">A short morning routine for puffiness, plus a way to find which evening habits cause it.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/ebb-app/best-gua-sha-routine-app-for-iphone">Best Gua Sha Routine App for iPhone: A 14-Day Plan and How the Options Compare</a><br /><span class="note">What to look for in a gua sha app, and how Drena&#x27;s 14-day plan works.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/ebb-app/best-face-yoga-app-for-iphone">Best Face Yoga App for iPhone: 21-Day Plan and an Honest Comparison</a><br /><span class="note">How Drena&#x27;s 21-Day Face Yoga program works and how it compares with FaceYogi and Luvly.</span></li>
+      <li><a href="https://jjjulietttee-jpg.github.io/ebb-app/bloating-and-puffiness-tracker-app">Bloating and Face Puffiness Tracker for iPhone: Find Your Personal Triggers</a><br /><span class="note">A tracker that compares your mornings after salt, alcohol or short sleep with the mornings after none.</span></li>
 
-<h2>Support</h2>
-<p>Email <a href="mailto:nastya.shchaveleva@internet.ru">nastya.shchaveleva@internet.ru</a>.
-Tell us your iOS version and what you were doing — it gets you a useful answer
-faster.</p>
+    </ul>
+        <h2>Price</h2>
+    <p>Free to download, with a free trial of Drena Pro. Check-ins, programs, the full routine library and the trigger map are part of Drena Pro. Prices depend on your country and are shown in the app and on the App Store listing.</p>
 
-<h2>Common questions</h2>
-<dl>
-  <dt>Why is my score different from how I feel?</dt>
-  <dd>The score comes only from the four taps you make each morning. If it does
-  not match your experience, change the taps — nothing else feeds it.</dd>
+        <h2>Frequently asked questions</h2>
+    <details open><summary>What is the best app for morning face puffiness?</summary><p>It depends on what you want. FaceYogi and Luvly are large face yoga libraries; Depuff AI analyses photos. Drena focuses on lymphatic drainage and gua sha routines, a daily Morning Score and finding your own triggers.</p></details>
+    <details><summary>Does Drena scan my face with the camera?</summary><p>No. There is no AI face scan or camera analysis.</p></details>
+    <details><summary>Does lymphatic drainage detox the body?</summary><p>No. Lymph does not flush toxins; the liver and kidneys do. Drena treats puffiness as fluid.</p></details>
+    <details><summary>Is Drena free?</summary><p>It is free to download and has a free trial of Drena Pro. Prices are shown in the app.</p></details>
+    <details><summary>Is Drena available on Android?</summary><p>No, Drena is an iPhone app.</p></details>
+    <details><summary>Is it a medical device?</summary><p>No. It does not diagnose or treat anything, including lymphoedema. See a doctor for sudden, one-sided or painful swelling.</p></details>
 
-  <dt>Why does the trigger map say "keep logging"?</dt>
-  <dd>It needs at least fourteen days, and at least eight days both with and
-  without a given factor, before it will state anything. A finding from three
-  mornings would be a coin flip, so we do not show one.</dd>
 
-  <dt>Does drainage work permanently?</dt>
-  <dd>No, and the app says so. The effect lasts hours, not days. That is why
-  the routine is a daily one.</dd>
+    <div class="cta"><a class="btn" href="https://apps.apple.com/app/id6797460352?pt=128839649&amp;ct=ai_web">Try Drena on your iPhone</a><p class="note">Free to download on the App Store, with a free trial of Drena Pro.</p></div>
 
-  <dt>How do I cancel?</dt>
-  <dd>In your Apple Account settings, under Subscriptions. Deleting the app does
-  not cancel it. Refunds go through
-  <a href="https://reportaproblem.apple.com">Apple</a>.</dd>
+  </article>
 
-  <dt>I paid but Pro is not showing.</dt>
-  <dd>Open the paywall and tap <em>Restore Purchases</em>, signed into the same
-  Apple Account you bought with. If it still does not appear, email us.</dd>
-
-  <dt>Where is my data?</dt>
-  <dd>Your check-ins, sessions and photos stay on your iPhone; we have no server and no copy of them — see the
-  <a href="./privacy.html">Privacy Policy</a>.</dd>
-</dl>
-
-<h2>Important</h2>
-<p>Drena is a wellness app, not a medical service. See a doctor if swelling is
-painful, one-sided, sudden, or does not settle during the day. Full detail in
-the <a href="./terms.html">Terms of Use</a>.</p>
-
-<footer>© 2026 Anastassiya Shugaley ·
-<a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a></footer>
-
+</main>
+<footer>
+  <a href="https://jjjulietttee-jpg.github.io/ebb-app/">Drena</a> · <a href="https://jjjulietttee-jpg.github.io/ebb-app/privacy.html">Privacy</a> · <a href="https://jjjulietttee-jpg.github.io/ebb-app/terms.html">Terms</a> · <a href="https://jjjulietttee-jpg.github.io/ebb-app/support.html">Support</a>
+</footer>
 </body>
 </html>
